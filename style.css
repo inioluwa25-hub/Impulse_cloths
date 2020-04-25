@@ -1,0 +1,37 @@
+body{
+background:url("is(2).jpg")
+}
+
+#road{
+background:url("is(3).jpg")
+}
+
+#runner{
+
+background:url("pot.jpeg") 
+ 
+width:250px;
+height:330px;
+animation:walk 1s steps(24) infinite,
+		forward 5s linear infinite;
+}
+
+@keyframes walk{
+0%{
+background-position:0px;
+}
+100%{
+background-position: 600px;
+}
+}
+
+
+@keyframes forward{
+0%{
+transform:translateX(-100px);
+}
+
+100%{
+transform:translateX(1200px);
+}
+}
